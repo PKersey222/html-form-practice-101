@@ -1,0 +1,86 @@
+.container { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      "header"
+      "email" 
+      "comments"
+      "how-did-you-hear-about-me" 
+      "contact-you"
+      "birthday"
+      "reset"
+      "submit";
+
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    
+}
+
+#email {
+    grid-area: email;
+    text-align: center;
+}
+#comments {
+    grid-area: comments;
+    text-align: center;
+    
+}
+#how-did-you-hear-about-me {
+    grid-area: how-did-you-hear-about-me;
+    text-align: center;
+    margin-bottom:pt;
+}
+#contact-you {
+    grid-area: contact-you;
+    text-align: center;
+    margin: pt
+}
+#birthday {
+    grid-area: birthday;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .container {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: repeat(4, 1fr);
+       grid-template-areas:
+           "header header"
+           "email email"
+           "comments comments" 
+           "how-did-you-hear-about-me how-did-you-hear-about-me"
+           "contact-you contact-you"
+           "birthday birthday"
+           "reset reset"
+           "submit submit";
+    }
+
+ 
+
+   } 
+
+   @media (min-width: 992px) {
+
+     /* body {
+        background-color: black; 
+      }  */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "header header"
+        "email email"
+        "comments comments" 
+        "how-did-you-hear-about-me how-did-you-hear-about-me"
+        "contact-you contact-you"
+        "birthday birthday"
+        "reset reset"
+        "submit submit";
+     }
+    }
